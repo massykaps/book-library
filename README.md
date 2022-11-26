@@ -66,4 +66,4 @@ The project implements RESTful routes and allows users to perform CRUD (Create, 
 
 ## Author
 
-- Will Hodgkinson
+- Masiye Kapenda
