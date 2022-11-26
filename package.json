@@ -1,0 +1,42 @@
+{
+  "name": "book_library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node scripts/create-database.js",
+    "start": "nodemon -r dotenv/config index.js",
+    "pretest": "node scripts/create-database.js test",
+    "test": "mocha tests/**/*.test.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js",
+    "posttest": "node scripts/drop-database.js",
+    "unit-test": "mocha tests/unit/*.js --exit --recursive --timeout 60000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will-H93/book-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Will-H93/book-library/issues"
+  },
+  "homepage": "https://github.com/Will-H93/book-library#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.4.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.22.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "sinon": "^14.0.0",
+    "supertest": "^6.2.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  }
+}
