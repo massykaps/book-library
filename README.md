@@ -28,8 +28,6 @@ The project implements RESTful routes and allows users to perform CRUD (Create, 
 - Run `npm start` to start the project
 - Run `npm test` to run the tests
 
-![Database schema](Book_lib.JPG)
-
 ## Routes
 
 ### Authors
